@@ -1,6 +1,6 @@
 Task Description:
 
-Create a personal mini car inventory system from scratch using your best knowledge and skills. The system will have inventory of manufacturer and models (cars) of each manufacturer owned.
+Personal mini car inventory system from scratch. The system will have inventory of manufacturer and models (cars) of each manufacturer owned.
 
 
 Technology to be used:
@@ -43,7 +43,7 @@ Serial Number, Manufacturer Name, Model Name, Count
 
 eg. 
 
-1.	 Maruti             WagonR              2 
+1.	 Maruti                  WagonR                  2 
 
 2.       Tata                 Nano                   1
 
