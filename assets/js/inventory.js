@@ -31,6 +31,7 @@ function addInventoryDetails() {
             data: {'id':id},
             success: function(data) {
                 data = JSON.parse(data);
+                data = data[0];
                 var inventory_details = "";
                 inventory_details += '<div class="control-group"><label class="control-label">Model</label><div class="controls readonly">'+data.model_name+'</div></div>';
                 inventory_details += '<div class="control-group"><label class="control-label">Manufacturer</label><div class="controls readonly">'+data.manufacturer_name+'</div></div>';
@@ -72,6 +73,7 @@ function soldOut(id, model_name) {
                             msg += '</div>';
                             addSoldOutNotification(id);
                             alert("Data updated successfully");
+                            location.reload();
                         break;
                 case 'error':
                         var msg = '<div class="alert alert-danger text-center">';
