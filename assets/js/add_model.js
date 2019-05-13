@@ -57,21 +57,28 @@ function addModel() {
         processData: false,
         contentType: false,
         success: function(data) {
-            switch(data) {
-                case 'success':
+            console.log(data);
+            
+                if( data == 'success') {
                         var msg = '<div class="alert alert-success text-center">';
                             msg += '<strong>Success!</strong> Car Model added successfully.';
                             msg += '</div>';
-                        break;
-                case 'error':
+                }
+                else if( data ==  'error') {
                         var msg = '<div class="alert alert-danger text-center">';
                             msg += '<strong>Failed!</strong> Please retry.';
                             msg += '</div>';
-                        break;
-            }
+                }
+                else {
+                    var msg = '<div class="alert alert-danger text-center">';
+                            msg += data;
+                            msg += '</div>';
+                }
+                
             $('#alerts').html(msg);
             $("#alerts").show();
             $("#alerts").show().delay(5000).fadeOut();
+            //location.reload();
         }
     });
 }
