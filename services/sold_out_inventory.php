@@ -1,6 +1,6 @@
 <?php
 
-require '../classes/Manufacturer.php';
+require '../classes/Model.php';
 require '../includes/util.php';
 
 $model = new Model();
